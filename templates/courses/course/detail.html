@@ -25,14 +25,9 @@
       </h5>
       {{ object.overview|linebreaks }}
       {% if request.user.is_authenticated %}
-          <form action="{% url "student_enroll_course" %}" method="post">
-
-              {{ enroll_form }}
-              {% csrf_token %}
-
-              <div style="margin-left:550px">
-              <input type="submit" class="btn btn-primary btn-lg" value="Enroll now">
-            </div>
+           <a href="http://www.walchandsangli.ac.in/" class="btn btn-primary btn-lg">
+              enroll now
+          </a>
 
 
       {% else %}
